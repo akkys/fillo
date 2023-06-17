@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Sidebar.css";
-import { Col, Row } from "reactstrap";
+import { Col, Container, List, Row } from "reactstrap";
+import Profile from "./Profile";
 import {
   CiBoxes,
   CiSettings,
@@ -13,14 +14,13 @@ import {
   CiCreditCard2,
   CiMedal,
 } from "react-icons/ci";
-import Profile from "./Profile";
 
-const Sidebar = () => {
+const Sidebar1 = () => {
   return (
-    <div className="container-fluid">
+    <Container fluid>
       <Row>
         <Col md={2} className="sidebar_container">
-          <ul>
+          <List type="unstyled">
             <Profile />
             <li>
               <CiBoxes size={20} className="icons" /> Insights
@@ -34,7 +34,7 @@ const Sidebar = () => {
             <li>
               <CiShop size={20} className="icons" /> Vendors
             </li>
-            <li>
+            <li className="active">
               <CiChat2 size={20} className="icons" /> Accouting
             </li>
             <li>
@@ -52,12 +52,11 @@ const Sidebar = () => {
             <li>
               <CiSettings size={20} className="icons" /> Settings
             </li>
-          </ul>
+          </List>
         </Col>
-        {/* <Col md={9}>Hello</Col> */}
       </Row>
-    </div>
+    </Container>
   );
 };
 
-export default Sidebar;
+export default Sidebar1;
