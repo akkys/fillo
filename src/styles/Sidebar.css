@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar_container{
+    position: relative;
+    height: 89vh;
+    border-radius: 0px 20px 0 0;
+    background-color: rgb(234, 236, 236);
+    padding: 0;
+}
+
+ol ul {
+    padding-left: 1rem !important;
+}
+
+ul li {
+    list-style: none;
+    padding: 8px;
+    font-size: 14px;
+    color: rgb(136, 135, 135);
+    font-weight: 500;
+}
+
+ul li:last-child{
+    position: absolute;
+    bottom: 12%;
+}
+
+ul li .icons{
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.profile img{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+
+.profile{
+    margin: 10% 0 8% 0;
+    display: flex;
+
+}
+.profile div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    line-height: 17px;
+}
+
+.profile div span{
+    font-size: 15px;
+    font-weight: 550;
+}
+.profile div small{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
