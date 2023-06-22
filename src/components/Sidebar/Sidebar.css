@@ -6,30 +6,31 @@
 
 .sidebar_container{
     position: relative;
-    height: 89vh;
+    height: 86vh;
     border-radius: 0px 20px 0 0;
-    background-color: rgb(234, 236, 236);
-    padding: 0 25px 0 20px;
+    /* background-color: rgb(234, 236, 236); */
+    background-color: whitesmoke;
+    padding: 5px 25px 0 20px;
 }
 
-ol, ul {
+.sidebar_container > ol, ul {
     padding-left: 1.5rem;
 }
 
-ul li {
+.sidebar_container > ul li {
     list-style: none;
     padding: 8px;
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(136, 135, 135);
     font-weight: 500;
 }
 
-ul li:last-child{
+.sidebar_container > ul li:last-child{
     position: absolute;
     bottom: 12%;
 }
 
-ul li .icons{
+.sidebar_container > ul li .icons{
     margin-right: 15px;
     font-weight: 500;
 }
