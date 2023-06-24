@@ -8,10 +8,10 @@ const SubMain = () => {
     <Row>
       {mainData.map((data) => {
         return (
-          <Col className="mt-2 main_box">
-            {data.content}
+          <Col className="main_box">
+            <span>{data.content}</span>
             <h2>
-              {data.count} <CiMaximize1 size={20} />
+              {data.count} <CiMaximize1 />
             </h2>
           </Col>
         );

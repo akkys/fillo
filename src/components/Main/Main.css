@@ -1,24 +1,36 @@
 .main_container{
-    height: 85vh;
-    border-radius: 20px;
+    height: 110%;
+    border-radius: 3vh;
     border: 1px solid rgb(224, 222, 222);
-    /* background-color: aqua; */
-    margin-right: 20px;
-    /* width: 80vw; */
-    padding: 15px ;
-    /* overflow-y: auto; */
+    margin-top: 1.5vh;
+    padding: 3vh ;
+}
+
+.main_container h4{
+    font-size: 3.8vh;
+    font-weight: 550;
 }
 
 .main_box{
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
-    border-radius: 15px;
-    padding: 15px;
-    margin-right: 15px;
+    border-radius: 3vh;
+    padding: 3vh;
+    /* margin-right: 3vw; */
+    margin: 2vh;
 }
 
-.main_box:last-child{
-    margin-right: 0;
+.main_box span{
+    font-size: 2.5vh;
+}
+
+.main_box h2{
+    margin-top: 2vh;
+    font-size: 5vh;
+}
+
+.main_box svg{
+    font-size: 4vh;
 }
 
 .icons_main{
@@ -28,78 +40,173 @@
 
 .icons_main div:last-child{
     border: 1px solid rgb(34, 139, 8);
-    border-radius: 50px;
-    font-size: 13px;
-    padding:6px 15px;
+    border-radius: 3vh;
+    font-size: 1.8vh;
+    padding: 1.2vh 1.2vw 1.3vh;
     color: rgb(34, 139, 8);
 }
 
 .icon_div{
     display: flex;
-    justify-content: space-around;
-    width: 115px;
+    justify-content: space-between;
+    width: 7vw
 }
 
+@media screen and (max-width:1115px) {
+    .search_field .icons{
+        left: 2vw !important;
+        /* top: 2rem; */
+    }
+
+    .icon_div{
+        width: 9vw !important;
+    }
+
+    .icons_main .icon_div .icons_tag{
+        padding: .2vh .7vw 0vh;
+    }
+
+    tbody tr th img{
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .icon_div{
+        width: 15vw !important;   
+    }
+
+    .icons_main .icon_div .icons_tag{
+        padding: .2vh 1.2vw 0vh;
+    }
+    .search_field .icons{
+        left: 3vw !important;
+        /* top: 2rem; */
+    }
+    .search_field :placeholder-shown{
+        padding-left: 4vw !important;
+    }
+    .search_field{
+        width: 95vw !important;
+    }
+    .search_field input{
+        width: 93vw !important;
+    }
+
+    .icon_div{
+        width: 13vw !important;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .icon_div{
+        width: 15vw !important;   
+    }
+
+    .icons_main .icon_div .icons_tag{
+        padding: .2vh 2vw 0vh;
+    }
+    .search_field .icons{
+        left: 4.5vw !important;
+    }
+    .search_field :placeholder-shown{
+        padding-left: 6.5vw !important;
+    }
+
+    .icon_div{
+        width: 20vw !important;
+        justify-content: space-between;
+    }
+}
 .search .icons_tag{
     border: 1px solid rgb(224, 222, 222);
-    border-radius: 50px;
-    padding: 1px 7% 6px 9px;
-    /* font-size: 50px; */
+    border-radius: 3vh;
+    padding: .4vh .7vw .6vh;
+    font-size: 2.8vh;
 }
 
 .search_field{
     position: relative;
-    width: auto;
+    width: 23vw;
 }
+
 
 .search_field .icons{
     position: absolute;
-    left: 20px;
-    top: 8px;
+    left: 1.5vw;
+    top: 1.5vh;
+    font-size: 2.8vh;
 }
 
 .search_field input{
     border: none;
     border: 1px solid rgb(224, 222, 222);
-    padding: 5px 10px;
-    font-size: 13px;
-    border-radius: 20px;
-    padding-left: 30px;
+    padding: 1.5vh 1vw;
+    font-size: 1.8vh;
+    border-radius: 3vh;
+    width: 21vw;
 }
 
 
 .search_field :placeholder-shown{
-    padding-left: 30px;
+    padding-left: 2.5vw
 }
 
+.table{
+    margin-top: 3vh;
+}
+
+.table thead tr{
+    border-top-left-radius: 10px;
+}
 
 .table_header{
     background-color: whitesmoke;
 }
 
-table thead tr th{
-    font-size: 13px;
-    color: rgb(168, 167, 167);
-    font-weight: 500;
+.table_header th{
+    padding: 2vh 1.2vw; 
+    font-size: 1.8vh;
+    color: rgb(168, 167, 167);                              
+    font-weight: 600;
+}
+
+.table>tbody{
+    vertical-align: middle;
+}
+
+
+
+table tbody tr th{
+    padding: 2vh 1vw !important;
 }
 
 table .btn-outline-secondary {
-    font-size: 12px !important;
+    font-size: 1.8vh !important;
     border-color: rgb(224, 222, 222) !important;
+    padding: 1vh;
+    border-radius: 1vh;
 }
 
 tbody tr th img{
-    height: 35px;
-    width: 35px;
+    height: 5vh;
+    width: 2.5vw;
     /* border: 1px solid; */
     border-radius: 50px;
+    object-fit: cover;
 }
 tbody tr th span{
     margin-right: 5px;
 }
 
 tbody tr{
-    font-size: 13px;
+    font-size: 2vh;
+}
+
+tbody tr th td{
+    padding: 2vh 2vw;
 }
 
 table .text-danger{
@@ -107,13 +214,17 @@ table .text-danger{
 }
 
 tbody tr th small{
-    font-size: 12px;
+    font-size: 1.8vh;
     font-weight: normal;
     color: rgb(97, 96, 96);
 }
 
 tbody tr td small{
-    font-size: 12px;
+    font-size: 1.8vh;
     font-weight: normal;
     color: rgb(97, 96, 96);
+}
+
+tbody svg{
+    font-size: 2.5vh;
 }

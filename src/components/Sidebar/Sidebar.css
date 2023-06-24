@@ -6,11 +6,11 @@
 
 .sidebar_container{
     position: relative;
-    height: 86vh;
-    border-radius: 0px 20px 0 0;
-    /* background-color: rgb(234, 236, 236); */
+    height: 110%;
+    border-radius: 0 3vh 0 0;
     background-color: whitesmoke;
-    padding: 5px 25px 0 20px;
+    padding: 1vh 3vh;
+    margin-top: 1.5vh;
 }
 
 .sidebar_container > ol, ul {
@@ -19,54 +19,72 @@
 
 .sidebar_container > ul li {
     list-style: none;
-    padding: 8px;
-    font-size: 13px;
+    padding: 1.6vh;
+    font-size: 2vh;
     color: rgb(136, 135, 135);
     font-weight: 500;
+    cursor: pointer;
 }
 
 .sidebar_container > ul li:last-child{
     position: absolute;
-    bottom: 12%;
+    bottom: 10vh;
+    width: 83%;
 }
 
 .sidebar_container > ul li .icons{
-    margin-right: 15px;
+    margin-right: 1vw;
     font-weight: 500;
+    font-size: 3vh;
 }
 
-ul .active{
+.sidebar_container ul li:hover{
     border: 1px solid;
-    border-radius: 20px;
-    background-color: whitesmoke;
-    border-color: whitesmoke;
-}
-
-.profile img{
-    width: 35px;
-    height: 35px;
-    /* border: 1px solid; */
-    border-radius: 50%;
+    border-radius: 5vw;
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .profile{
-    margin: 10% 0 8% 0;
+    margin: 2vh 0 2vh 0;
     display: flex;
 
+}
+.profile img{
+    /* width: 2.5vw; */
+    height: 5vh;
+    border-radius: 50%;
+}
+
+@media screen and(max-width:1115px) {
+    .profile img{
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .sidebar_container{
+        height: 100vh !important;
+    }
+
+    .sidebar_container:last-child{
+        width: 100vw !important;
+    }
 }
 .profile div{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    line-height: 17px;
+    line-height: 2.5vh
 }
 
 .profile div span{
-    font-size: 15px;
+    font-size: 2.2vh;
     font-weight: 550;
 }
 .profile div small{
-    font-size: 12px;
+    font-size: 1.7vh;
     font-weight: 400;
     color: gray;
 }

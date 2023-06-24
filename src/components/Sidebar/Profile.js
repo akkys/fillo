@@ -5,7 +5,7 @@ import { profile } from "../../data";
 const Profile = () => {
   return (
     <div className="profile">
-      <img src={avatar} alt="avatar" />
+      <img src={avatar} alt="avatar" className="profile_img" />
       <div>
         <span>{profile.name}</span>
         <small>{profile.role}</small>

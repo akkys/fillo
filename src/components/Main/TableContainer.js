@@ -6,7 +6,7 @@ import TableBody from "./TableBody";
 
 const TableContainer = () => {
   return (
-    <Table bordered responsive className="mt-3" id="table_container">
+    <Table bordered responsive>
       <TableHeader tableHeader={tableHeader} />
       <TableBody tableData={tableData} />
     </Table>

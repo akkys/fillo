@@ -4,7 +4,7 @@ import { CiCalendar, CiCalendarDate, CiDollar, CiSearch } from "react-icons/ci";
 
 const Search = () => {
   return (
-    <Row className="mt-3 search">
+    <Row className="mt-1 search">
       <Col md={4} className="mt-2 search_field">
         <CiSearch className="icons" />
         <input placeholder="Search & Filter" className="text_field" />
@@ -16,10 +16,10 @@ const Search = () => {
       <Col className="mt-2 icons_main">
         <div className="icon_div">
           <span className="icons_tag">
-            <CiDollar size={17} />
+            <CiDollar />
           </span>
           <span className="icons_tag">
-            <CiCalendar size={17} />
+            <CiCalendar />
           </span>
         </div>
         <div>

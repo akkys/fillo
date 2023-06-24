@@ -27,15 +27,21 @@ const TableBody = ({ tableData }) => {
                 <br />
                 <small>{tdata.occupation}</small>
               </td>
-              <td style={{ display: "flex", justifyContent: "space-between" }}>
+              <td
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  border: "none",
+                }}
+              >
                 {tdata.category}
                 <BiChevronDown />
               </td>
-              <td>
+              <td className="receipt">
                 {tdata.receipt === true ? (
-                  <CiFileOn size={16} className="text-success" />
+                  <CiFileOn className="text-success" />
                 ) : (
-                  <CiFileOn size={16} className="text-danger" />
+                  <CiFileOn className="text-danger" />
                 )}
               </td>
               <td>
