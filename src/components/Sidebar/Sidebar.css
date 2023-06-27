@@ -1,90 +1,164 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sidebar_container{
-    position: relative;
-    height: 110%;
-    border-radius: 0 3vh 0 0;
-    background-color: whitesmoke;
-    padding: 1vh 3vh;
-    margin-top: 1.5vh;
+.sidebar_container {
+  top: 10vh;
+  position: relative;
+  height: 86vh;
+  border-radius: 0 3vh 0 0;
+  background-color: whitesmoke;
+  /* padding: .5rem 3rem; */
+  padding: 1.5vh 3.8vw;
+  margin-top: 1.5vh;
+  position: fixed;
 }
 
-.sidebar_container > ol, ul {
-    padding-left: 1.5rem;
+.sidebar_container {
+  padding-left: 1vw;
 }
 
-.sidebar_container > ul li {
-    list-style: none;
-    padding: 1.6vh;
-    font-size: 2vh;
-    color: rgb(136, 135, 135);
-    font-weight: 500;
-    cursor: pointer;
+.sidebar_container > li {
+  list-style: none;
+  padding: 0.1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.sidebar_container > ul li:last-child{
-    position: absolute;
-    bottom: 10vh;
-    width: 83%;
+.sidebar_container li .nav-link {
+  font-size: 0.8rem;
+  color: rgb(136, 135, 135);
+  padding: 1.2vh 1vw;
 }
 
-.sidebar_container > ul li .icons{
-    margin-right: 1vw;
-    font-weight: 500;
-    font-size: 3vh;
+.sidebar_container > li:last-child {
+  position: absolute;
+  bottom: 10vh;
+  /* width: 83%; */
 }
 
-.sidebar_container ul li:hover{
-    border: 1px solid;
-    border-radius: 5vw;
-    background-color: #fff;
-    border-color: #fff;
+.sidebar_container > li .icons {
+  margin-right: 1vw;
+  font-weight: 500;
+  font-size: 3vh;
 }
 
-.profile{
-    margin: 2vh 0 2vh 0;
-    display: flex;
-
-}
-.profile img{
-    /* width: 2.5vw; */
-    height: 5vh;
-    border-radius: 50%;
+.sidebar_container li:hover {
+  border: 1px solid;
+  border-radius: 5vw;
+  background-color: #fff;
+  border-color: #fff;
 }
 
+.sidebar_container li .nav-link:hover {
+  font-weight: 500;
+  color: black;
+}
+
+.profile {
+  margin: 2vh 0 2vh 0;
+  display: flex;
+}
+.profile img {
+  /* width: 2.5vw; */
+  height: 5vh;
+  border-radius: 50%;
+}
+.profile div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 2.5vh;
+}
+
+.profile div span {
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+.profile div small {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: gray;
+}
+@media screen and (min-width: 3500px) and (max-width: 5000px) {
+  .sidebar_container li .nav-link {
+    font-size: 2.5rem;
+  }
+  .profile div span {
+    font-size: 2.5rem;
+  }
+  .profile div small {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 2500px) and (max-width: 3499px) {
+  .sidebar_container li .nav-link {
+    font-size: 2.2rem;
+  }
+  .profile div span {
+    font-size: 2.2rem;
+  }
+  .profile div small {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 2499px) {
+  .sidebar_container li .nav-link {
+    font-size: 2rem;
+  }
+  .profile div span {
+    font-size: 2rem;
+  }
+  .profile div small {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1379px) and (max-width: 1499px) {
+  .sidebar_container li .nav-link {
+    font-size: 0.9rem;
+  }
+  .profile div span {
+    font-size: 0.9rem;
+  }
+  .profile div small {
+    font-size: 0.6rem;
+  }
+}
 @media screen and(max-width:1115px) {
-    .profile img{
-        width: 2rem !important;
-        height: 2rem !important;
-    }
+  .profile img {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
 }
 
-@media screen and (max-width:768px){
-    .sidebar_container{
-        height: 100vh !important;
-    }
-
-    .sidebar_container:last-child{
-        width: 100vw !important;
-    }
-}
-.profile div{
+@media screen and (max-width: 900px) {
+  .col-md-2 {
+    display: none;
+  }
+  .offcanvas-header {
+    display: inline !important;
+  }
+  .profile {
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    line-height: 2.5vh
+    justify-content: space-between;
+  }
+  .profile div span {
+    font-size: 0.8rem;
+  }
+  .profile .offcanvas-header {
+    padding: 0rem 1rem !important;
+  }
 }
 
-.profile div span{
-    font-size: 2.2vh;
-    font-weight: 550;
-}
-.profile div small{
-    font-size: 1.7vh;
-    font-weight: 400;
-    color: gray;
+@media screen and (max-width: 768px) {
+  .sidebar_container {
+    height: 100vh !important;
+  }
+
+  .sidebar_container:last-child {
+    width: 100vw !important;
+  }
 }

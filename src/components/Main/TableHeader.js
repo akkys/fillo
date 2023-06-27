@@ -4,8 +4,8 @@ const TableHeader = ({ tableHeader }) => {
   return (
     <thead>
       <tr className="table_header">
-        {tableHeader.map((thead) => {
-          return <th>{thead}</th>;
+        {tableHeader.map((thead, i) => {
+          return <th key={i}>{thead}</th>;
         })}
       </tr>
     </thead>

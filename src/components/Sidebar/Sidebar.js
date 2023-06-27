@@ -2,10 +2,11 @@ import React from "react";
 import "./Sidebar.css";
 import Profile from "./Profile";
 import { sidebarContent } from "../../data";
+import { Offcanvas } from "react-bootstrap";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar_container">
+    <div className="sidebar_container1">
       <ul>
         <Profile />
         {sidebarContent.map((sidebarData) => {

@@ -6,9 +6,9 @@ import { Col, Row } from "reactstrap";
 const SubMain = () => {
   return (
     <Row>
-      {mainData.map((data) => {
+      {mainData.map((data, i) => {
         return (
-          <Col className="main_box">
+          <Col className="main_box" key={i}>
             <span>{data.content}</span>
             <h2>
               {data.count} <CiMaximize1 />
